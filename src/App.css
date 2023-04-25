@@ -1,0 +1,28 @@
+.copo-pequeno {
+    background-color:#fdfdfd;
+    border: 4px solid #144FC6;
+    height: 90px;
+    width: 50px;
+    border-radius: 0 0 15px 15px;
+    margin: 15px 0;
+    color: #144FC6;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.copo-pequeno--full {
+    background-color: var(--azul-claro);
+    border: 4px solid #144FC6;
+    height: 90px;
+    width: 50px;
+    border-radius: 0 0 15px 15px;
+    margin: 15px 0;
+    color: var(--branco);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
