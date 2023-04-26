@@ -1,5 +1,5 @@
 import Context from '../ContextAPI/ContextAPI';
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import { ContainerCopoPequeno, ContainerCoposPequenos } from "../../styled";
 
 
@@ -19,12 +19,10 @@ const CoposPequenos = () => {
         altura, setAltura
     ] = useContext(Context);
 
-    const [selecionado, setSelecionado] = useState<boolean>(false);
 
     const preencheCopoPequeno = (copo: number) => {
         switch (copo) {
             case 1:
-                setSelecionado(true);
                 setPreenchido1(true);
                 setPorcentagem('12.5%');
                 setAltura(41.25);
@@ -67,7 +65,6 @@ const CoposPequenos = () => {
                 setLitros('1,75L');
                 break;
             case 8:
-                setSelecionado(true);
                 setPreenchido8(true);
                 setPorcentagem('100%');
                 setAltura(330);
